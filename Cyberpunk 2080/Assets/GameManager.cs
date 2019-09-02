@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager GM;
     public float BPM;
     public float turnSpeed;
+    float maxDist=50;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         frames++;
-        if (frames >= 59)
+        if (frames >= (BPM/60)*2/60)
         {
             SpawnBuilding();
             frames = 0;
@@ -32,6 +33,11 @@ public class GameManager : MonoBehaviour
     }
     void SpawnBuilding()
     {
+        Quaternion rotation = Quaternion.AngleAxis(Mathf.Floor(Random.Range(-361, 0)),-Vector3.forward);
 
+        Vector3 direction = rotation * Vector3.up;
+        Vector3 position = transform.position + (direction * maxDist);
+        
+        Instantiate(building, position, rotation);
     }
 }
