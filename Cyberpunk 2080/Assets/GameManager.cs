@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager :MonoBehaviour
 {
+    public float maxSpeed;
+    float speed =10;
     public static GameManager GM;
     private void Awake()
     {
@@ -20,7 +22,7 @@ public class GameManager :MonoBehaviour
     }
         int frames=0;
     public GameObject block;
-    
+    public bool shield = false;
    public  int points;
     public float turnSpeed;
     float maxDist = 2;
@@ -39,6 +41,7 @@ public class GameManager :MonoBehaviour
         {
             SpawnBuilding();
             frames = 0;
+            GameManager.GM.points += 10;
         }
         frames++;
         float z = transform.rotation.eulerAngles.z - angle;
@@ -68,9 +71,12 @@ public class GameManager :MonoBehaviour
 
         Vector3 direction = rotation * Vector3.up;
         Vector3 position = transform.position + (direction * maxDist);
-        position.z = 15;
-
+        position.z = 20;
+       
+        
         var floor = Instantiate(block, position, rotation);
-        floor.GetComponent<Rigidbody>().velocity = Vector3.back * points;
+       // var decay = points * 0.5f;
+        //if (decay > maxSpeed) decay = maxSpeed;
+        floor.GetComponent<Rigidbody>().velocity = Vector3.back * 10;// decay;
     }
 }
