@@ -15,50 +15,42 @@ public class GameManager : MonoBehaviour
     void Start()
     {
          
-        BPM = 110;
-        beatS = BPM / 60 / 2 / 60;
-        for (int i = 0; i < 30; i++)
-        {
-
-            
-             Quaternion rotation; 
-            if(i>0)
-                rotation =Quaternion.AngleAxis(Mathf.Floor(Random.Range(-361, 0)), -Vector3.forward);
-            else rotation =Quaternion.AngleAxis(180, -Vector3.forward);
-            Vector3 direction = rotation * Vector3.up;
-            Vector3 position = transform.position + (direction * maxDist);
-            position.z = i * 200;
-
-            var floor = Instantiate(building, position, rotation, gameObject.transform);
-            floor.GetComponent<Rigidbody>().velocity = Vector3.back * 200;
-        }
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        float angle = 180;
+        float z = transform.rotation.eulerAngles.z - angle;
+        while (z < 0) z += 360;
+        z = Mathf.Repeat(z, 360);
         if (frames >= 59)
         {
-            SpawnBuilding();
+
             frames = 0;
         }
         frames++;
-        transform.Rotate(0, 0,-Input.GetAxis("Horizontal")* turnSpeed);
+        z -= 180;
+        z = Mathf.Clamp(z, -90, 90);
+        z += 180;
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.x, z + angle);
+
+        transform.Rotate(0, 0,Input.GetAxis("Horizontal")* turnSpeed);
     }
     private void FixedUpdate()
     {
         
     }
-    void SpawnBuilding()
-    {
-        Quaternion rotation = Quaternion.AngleAxis(Mathf.Floor(Random.Range(-361, 0)),-Vector3.forward);
+    //void SpawnBuilding()
+    //{
+    //    Quaternion rotation = Quaternion.AngleAxis(Mathf.Floor(Random.Range(-361, 0)),-Vector3.forward);
 
-        Vector3 direction = rotation * Vector3.up;
-        Vector3 position = transform.position + (direction * maxDist);
-        position.z = 673;
+    //    Vector3 direction = rotation * Vector3.up;
+    //    Vector3 position = transform.position + (direction * maxDist);
+    //    position.z = 673;
 
-        var floor = Instantiate(building, position, rotation,gameObject.transform);
-        floor.GetComponent<Rigidbody>().velocity = Vector3.back * 200; 
-    }
+    //    var floor = Instantiate(building, position, rotation,gameObject.transform);
+    //    floor.GetComponent<Rigidbody>().velocity = Vector3.back * 200; 
+    //}
 }
