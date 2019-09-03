@@ -1,6 +1,6 @@
 /target:library
 /nowarn:0169
-/out:Temp/Unity.TextMeshPro.dll
+/out:Temp/Assembly-CSharp.dll
 /debug:portable
 /optimize-
 /nostdlib+
@@ -66,22 +66,17 @@
 /reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/Managed/UnityEditor.dll"
 /reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/Managed/Unity.Locator.dll"
+/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.dll
+/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
+/reference:Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
 /reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
-/reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
-/reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
-/reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
-/reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
-/reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
-/reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
-/reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll"
-/reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
-/reference:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
-/reference:"E:/projecten/Cyberpunk/Cyberpunk-2080/Cyberpunk 2080/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll"
 /reference:"E:/projecten/Cyberpunk/Cyberpunk-2080/Cyberpunk 2080/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll"
 /reference:"E:/projecten/Cyberpunk/Cyberpunk-2080/Cyberpunk 2080/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll"
 /reference:"E:/projecten/Cyberpunk/Cyberpunk-2080/Cyberpunk 2080/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll"
-/reference:"E:/projecten/Cyberpunk/Cyberpunk-2080/Cyberpunk 2080/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll"
-/reference:"E:/projecten/Cyberpunk/Cyberpunk-2080/Cyberpunk 2080/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll"
 /reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 /reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
 /reference:"E:/unity hub/editors/2019.1.4f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
@@ -300,59 +295,9 @@
 /define:ENABLE_VSTU
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\AssemblyInfo.cs.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\FastAction.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\MaterialReferenceManager.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TextContainer.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TextMeshPro.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TextMeshProUGUI.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Asset.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Character.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_CharacterInfo.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_ColorGradient.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_CoroutineTween.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_DefaultControls.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Dropdown.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_EditorResourceManager.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontAsset.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontAssetCommon.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontAssetUtilities.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontFeaturesCommon.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontFeatureTable.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_InputField.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_InputValidator.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_LineInfo.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_ListPool.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_MaterialManager.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_MeshInfo.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_ObjectPool.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_PackageResourceImporter.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_RichTextTagsCommon.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_RichTextTagStack.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_ScrollbarEventHandler.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SelectionCaret.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Settings.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_ShaderUtilities.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Sprite.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SpriteAnimator.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SpriteAsset.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SpriteAssetImportFormats.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SpriteCharacter.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SpriteGlyph.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Style.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_StyleSheet.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SubMesh.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SubMeshUI.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Text.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_TextElement.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_TextElement_Legacy.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_TextInfo.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_TextParsingUtilities.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_TextUtilities.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_UpdateManager.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_UpdateRegistery.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMPro_EventManager.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMPro_ExtensionMethods.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMPro_MeshUtilities.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMPro_Private.cs"
-"E:\projecten\Cyberpunk\Cyberpunk-2080\Cyberpunk 2080\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMPro_UGUI_Private.cs"
+Assets\CubeScript.cs
+Assets\GameManager.cs
+Assets\MenuScript.cs
+Assets\Movement.cs
+Assets\Player_Controller.cs
+Assets\ScrollingTextManager.cs

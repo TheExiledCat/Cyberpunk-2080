@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   block: {fileID: 3734498233430643521, guid: 638f3f572c8e436468e612bf6c239cba, type: 3}
-  points: 0
+  points: 10
   turnSpeed: 5
 --- !u!4 &300983653
 Transform:

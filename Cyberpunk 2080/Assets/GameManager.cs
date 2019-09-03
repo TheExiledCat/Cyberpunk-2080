@@ -2,11 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager :MonoBehaviour
 {
-    int frames=0;
-    public GameObject block;
     public static GameManager GM;
+    private void Awake()
+    {
+
+        if (GM == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            GM = this;
+        }
+        else if (GM != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+        int frames=0;
+    public GameObject block;
+    
    public  int points;
     public float turnSpeed;
     float maxDist = 2;
