@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager :MonoBehaviour
 {
+    public GameObject shieldBody;
     public float maxSpeed;
     float speed =10;
     public static GameManager GM;
@@ -36,6 +37,13 @@ public class GameManager :MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (shield)
+        {
+            shieldBody.SetActive(true);
+        }else
+        {
+            shieldBody.SetActive(false);
+        }
         float angle = 180;
         if (frames >= 59)
         {
