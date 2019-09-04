@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameManager :MonoBehaviour
 {
+    public GameObject GO;
     public GameObject shieldBody;
     public float maxSpeed;
     float speed =10;
     public static GameManager GM;
     private void Awake()
     {
-
+        
         if (GM == null)
         {
             DontDestroyOnLoad(gameObject);
@@ -20,6 +21,7 @@ public class GameManager :MonoBehaviour
         {
             Destroy(gameObject);
         }
+        SpawnBuilding();
     }
         int frames=0;
     public GameObject block;
@@ -37,6 +39,20 @@ public class GameManager :MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (frames >= 179)
+        {
+            frames = 0;
+            if(maxSpeed<25)
+            maxSpeed += 1;
+
+        }
+        frames++;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+            shield = false;
+            points = 0;
+        }
         if (shield)
         {
             shieldBody.SetActive(true);
@@ -45,13 +61,13 @@ public class GameManager :MonoBehaviour
             shieldBody.SetActive(false);
         }
         float angle = 180;
-        if (frames >= 59)
+        if (SceneManager.GetActiveScene().buildIndex == 1)
         {
-            SpawnBuilding();
-            frames = 0;
-            GameManager.GM.points += 10;
+            Cursor.visible = false;
         }
-        frames++;
+        else
+            Cursor.visible = true;
+
         float z = transform.rotation.eulerAngles.z - angle;
         while (z < 0)
         {
@@ -72,8 +88,11 @@ public class GameManager :MonoBehaviour
         
     }
 
-
-    void SpawnBuilding()
+    public void Gameover(bool value)
+    {
+        GO.SetActive(value);
+    }
+    public void SpawnBuilding()
     {
         Quaternion rotation = Quaternion.AngleAxis(Mathf.Floor(Random.Range(180,270)), -Vector3.forward);
 
@@ -85,6 +104,6 @@ public class GameManager :MonoBehaviour
         var floor = Instantiate(block, position, rotation);
        // var decay = points * 0.5f;
         //if (decay > maxSpeed) decay = maxSpeed;
-        floor.GetComponent<Rigidbody>().velocity = Vector3.back * 10;// decay;
+        floor.GetComponent<Rigidbody>().velocity = new Vector3(0,0,-maxSpeed-10);// decay;
     }
 }

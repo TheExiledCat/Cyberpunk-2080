@@ -16,6 +16,11 @@ public class CubeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (transform.position.z < 2)
+        {
+            GameManager.GM.points += 10;
+            GameManager.GM.SpawnBuilding();
+            Destroy(gameObject);
+        }
     }
 }
